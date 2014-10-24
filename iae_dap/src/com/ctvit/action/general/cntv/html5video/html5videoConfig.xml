@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+	<!-- 登录 -->
+	<action name="getLoginInfo" class-type="com.ctvit.action.general.cntv.html5video.info.LoginInfo"
+		method="execute" path="/cntv/getLoginInfo"  >
+	</action>
+	<!-- 检查登录状态 -->
+	<action name="getCheckLogin" class-type="com.ctvit.action.general.cntv.html5video.info.CheckLogin"
+		method="execute" path="/cntv/getCheckLogin"  >
+	</action>
+	<!-- 退出登录 -->
+	<action name="getLoginOut" class-type="com.ctvit.action.general.cntv.html5video.info.LoginOut"
+		method="execute" path="/cntv/getLoginOut"  >
+	</action>
+	<!-- 查询频道设置信息 -->
+	<action name="getChannelInfo" class-type="com.ctvit.action.general.cntv.html5video.info.ChannelInfo"
+		method="execute" path="/cntv/getChannelInfo"  >
+	</action>
+	<!-- 查询系统设置信息 -->
+	<action name="getSystemInfo" class-type="com.ctvit.action.general.cntv.html5video.info.SystemInfo"
+		method="execute" path="/cntv/getSystemInfo"  >
+	</action>
+	<!-- 设置当前系统设置信息 -->
+	<action name="getUpdateSystem" class-type="com.ctvit.action.general.cntv.html5video.info.UpdateSystem"
+		method="execute" path="/cntv/getUpdateSystem"  >
+	</action>
+	<!-- 保存频道设置 -->
+	<action name="getSafeChannel" class-type="com.ctvit.action.general.cntv.html5video.info.SafeChannel"
+		method="execute" path="/cntv/getSafeChannel"  >
+	</action>
+	<!-- 查询数据,按时段查询 -->
+	<action name="getSearchDataInfo" class-type="com.ctvit.action.general.cntv.html5video.info.SearchDataInfo"
+		method="execute" path="/cntv/getSearchDataInfo"  >
+	</action>
+	<!-- 频道列表 -->
+	<action name="getChannelRelation" class-type="com.ctvit.action.general.cntv.html5video.info.ChannelRelation"
+		method="execute" path="/cntv/getChannelRelation"  >
+	</action>
+	<!-- 查询数据,按地区查询 -->
+	<action name="getSearchDataByArea" class-type="com.ctvit.action.general.cntv.html5video.info.SearchDataByArea"
+		method="execute" path="/cntv/getSearchDataByArea"  >
+	</action>
+	<!-- 查询数据,按天查询 -->
+	<action name="getSearchDataByDay" class-type="com.ctvit.action.general.cntv.html5video.info.SearchDataByDay"
+		method="execute" path="/cntv/getSearchDataByDay"  >
+	</action>
+	<!-- 地域列表 -->
+	<action name="getAreaInfo" class-type="com.ctvit.action.general.cntv.html5video.info.AreaInfo"
+		method="execute" path="/cntv/getAreaInfo"  >
+	</action>
+	<!-- 实时监控 -->
+	<action name="getShiShiJianKong" class-type="com.ctvit.action.general.cntv.html5video.info.ShiShiJianKong"
+		method="execute" path="/cntv/getShiShiJianKong"  >
+	</action>
+	<!-- 用户管理 -->
+	<action name="getManageUser" class-type="com.ctvit.action.general.cntv.html5video.info.ManageUser"
+		method="execute" path="/cntv/getManageUser"  >
+	</action>
+	<!-- 密码修改 -->
+	<action name="getModifyPassword" class-type="com.ctvit.action.general.cntv.html5video.info.ModifyPassword"
+		method="execute" path="/cntv/getModifyPassword"  >
+	</action>
+	<!-- 密码重置 -->
+	<action name="getResetPassword" class-type="com.ctvit.action.general.cntv.html5video.info.ResetPassword"
+		method="execute" path="/cntv/getResetPassword"  >
+	</action>
+</actions>

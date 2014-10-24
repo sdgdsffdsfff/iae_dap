@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <error-page>
+    <error-code>404</error-code>
+    <location>/WEB-INF/page/error/error_404.jsp</location>
+  </error-page>
+  <error-page>
+    <error-code>500</error-code>
+    <location>/WEB-INF/page/error/error_500.jsp</location>
+  </error-page>
+  <filter>
+    <filter-name>encodingFilter</filter-name>
+    <filter-class>com.ctvit.filter.EncodingFilter</filter-class>
+    <init-param>
+      <param-name>encoding</param-name>
+      <param-value>UTF-8</param-value>
+    </init-param>
+  </filter>
+  <servlet>
+    <servlet-name>servletDispatcher</servlet-name>
+    <servlet-class>com.ctvit.dispatcher.ServletDispatcher</servlet-class>
+  </servlet>
+  <filter-mapping>
+    <filter-name>encodingFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <servlet-mapping>
+    <servlet-name>servletDispatcher</servlet-name>
+    <url-pattern>*.xml</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>servletDispatcher</servlet-name>
+    <url-pattern>*.json</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>servletDispatcher</servlet-name>
+    <url-pattern>*.jsonp</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>getUserDailyData</servlet-name>
+  <servlet-class>com.ctvit.servlet.GetDateServlet</servlet-class>  
+ </servlet>
+ <servlet-mapping>
+  <servlet-name>getUserDailyData</servlet-name>
+  <url-pattern>/getUserDailyData</url-pattern>
+ </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

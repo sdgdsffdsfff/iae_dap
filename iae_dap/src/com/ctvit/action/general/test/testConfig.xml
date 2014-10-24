@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+
+	<action name="testJson" class-type="com.ctvit.action.general.test.TestJson"
+		method="execute" path="/getJson" >
+	</action>
+	<action name="testXml" class-type="com.ctvit.action.general.test.TestXML"
+		method="execute" path="/getXml" >
+	</action>
+	<action name="testAction" class-type="com.ctvit.action.general.test.TestAction"
+		method="execute" path="/get81" >
+	</action>
+
+</actions>

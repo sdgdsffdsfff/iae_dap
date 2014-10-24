@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+	<named-config name="localhost">
+		<property name="driverClass">com.mysql.jdbc.Driver</property>
+		<property name="jdbcUrl">jdbc:mysql://10.3.3.182:3306/ire_gehua?useUnicode=true&amp;characterEncoding=UTF-8</property>
+		<property name="user">ire</property>
+		<property name="password">123456</property>
+		<property name="minPoolSize">1</property>
+		<property name="maxPoolSize">20</property>
+		<property name="initialPoolSize">1</property>
+		<property name="maxIdleTime">25000</property>
+		<property name="acquireIncrement">1</property>
+		<property name="acquireRetryAttempts">30</property>
+		<property name="acquireRetryDelay">1000</property>
+		<property name="testConnectionOnCheckin">true</property>
+		<property name="automaticTestTable">c3p0TestTable</property>
+		<property name="idleConnectionTestPeriod">18000</property>
+		<property name="checkoutTimeout">3000</property>
+	</named-config>
+</c3p0-config>

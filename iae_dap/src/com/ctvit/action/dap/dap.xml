@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+	<!--highchart 获取每日用户数据 -->
+	<action name="getDailyUserCountData" class-type="com.ctvit.action.dap.DailyUserCountData"
+		method="execute" path="/getDailyUserCountData"  >
+	</action>
+	<!--datatable 获取每日用户数据 -->
+	<action name="getDailyUserCountTableData" class-type="com.ctvit.action.dap.DailyUserCountData"
+		method="tableData" path="/getDailyUserTableData"  >
+	</action>
+	<action name="getUserTimeData" class-type="com.ctvit.action.dap.UserTimeData"
+		method="execute" path="/getUserTimeData"  >
+	</action>
+
+</actions>

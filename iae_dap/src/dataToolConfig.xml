@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+	<action name="testAction" class-type="com.ctvit.action.general.DataInfoAction" method="execute" path="/getInfo" ></action>
+	<imports>
+		<import file="/com/ctvit/action/general/cntv/html5video/html5videoConfig.xml" />
+		<import file="/com/ctvit/action/dap/dap.xml" />
+	</imports>
+	
+	 
+</actions>

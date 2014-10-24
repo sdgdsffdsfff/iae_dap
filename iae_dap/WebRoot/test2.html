@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+
+
+	<script src="DataTables-1.10.3/media/js/jquery.js" type="text/javascript"></script>
+	<link href="DataTables-1.10.3/media/css/jquery.dataTables.css" rel="stylesheet"
+	type="text/css" />
+	<link href="DataTables-1.10.3/extensions/TableTools/css/dataTables.tableTools.css" rel="stylesheet"
+	type="text/css" />
+<script src="DataTables-1.10.3/media/js/jquery.dataTables.js" type="text/javascript"></script>
+<script src="DataTables-1.10.3/extensions/TableTools/js/dataTables.tableTools.js" type="text/javascript"></script>
+
+</head>
+
+<script type="text/javascript">
+	
+	
+	
+	
+$(document).ready(function() {
+    $('#example').dataTable( {
+        "ajax": "/iae_dap/getDailyUserTableData.json",
+        dom: 'T<"clear">lfrtip',
+        tableTools: {
+            "aButtons": [
+                "copy",
+                "csv",
+                "xls",
+                {
+                    "sExtends": "pdf",
+                    "sPdfOrientation": "landscape",
+                    "sPdfMessage": "Your custom message would go here."
+                },
+                "print"
+            ]
+        }
+    } );
+} );
+</script>
+<body>
+	<table id="example" class="display" cellspacing="0" width="100%">
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Count</th>
+          <!--   <th>Office</th>
+            <th>Extn.</th>
+            <th>Start date</th>
+            <th>Salary</th> -->
+        </tr>
+    </thead>
+ 
+  <!--   <tfoot>
+        <tr>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Office</th>
+            <th>Extn.</th>
+            <th>Start date</th>
+            <th>Salary</th>
+        </tr>
+    </tfoot> -->
+</table>
+	
+	
+	
+</body>
+</html>
