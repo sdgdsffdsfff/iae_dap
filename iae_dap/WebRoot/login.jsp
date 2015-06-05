@@ -39,13 +39,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         		<table class="login_table">
         			<tr>
         				<td align="center" width="27"><img src="image/user.png" height="18" width="18"/></td>
-        				<td width="60" align="middle"><span>用户名</span></td>
+        				<td width="60" align="middle"><span>username</span></td>
         				<td><input id="user_name" type="text" maxlength=16 onkeyup="value=value.replace(/[^\w\.\/]/ig,'')"/></td>
         			</tr>
         			<tr class="spe_tr"></tr>
         			<tr>
         				<td align="center" width="27"><img src="image/password.png" height="18" width="14"></td>
-        				<td width="60" align="middle"><span>密码</span></td>
+        				<td width="60" align="middle"><span>password</span></td>
         				<td><input type="password" id="user_password"  maxlength=16 value=""/></td>
         			</tr>
         		</table>
